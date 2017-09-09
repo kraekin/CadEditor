@@ -7,17 +7,17 @@ public static class ZamnUtils
   public static int victimAddrToVictimNo(int addr)
   {
     var victimAddrs = new Dictionary<int,int> {
-      { 0x11CF0 , 0x1},// Чувак с сосисками
-      { 0x11E44 , 0x2},// Младенец
-      { 0x11F7C , 0x3},// Девка на батуте
-      { 0x12164 , 0x4},// Вояка
-      { 0x1236C , 0x5},// Собака
-      { 0x12550 , 0x6},// Сын доктора тонгу
-      { 0x12668 , 0x7},// Училка
-      { 0x128EE , 0x8},// Археолог
-      { 0x12748 , 0x9},// чувак в бассейне
-      { 0x129EC , 0xA},// Девка из группы поддержки
-      { 0x12B7E , 0xB},// Туристы 
+      { 0x11CF0 , 0x1},// Barbeque Guy
+      { 0x11E44 , 0x2},// Baby
+      { 0x11F7C , 0x3},// Guy jumping on a trampoline
+      { 0x12164 , 0x4},// Soldier
+      { 0x1236C , 0x5},// Dog
+      { 0x12550 , 0x6},// Son of Dr Tongue
+      { 0x12668 , 0x7},// Teacher
+      { 0x128EE , 0x8},// Archeologist
+      { 0x12748 , 0x9},// Guy in the pool
+      { 0x129EC , 0xA},// Cheerleader
+      { 0x12B7E , 0xB},// Tourists 
     };
     int victimCode = 0;
     victimAddrs.TryGetValue(addr, out victimCode);
@@ -28,17 +28,17 @@ public static class ZamnUtils
   public static int victimNoToVictimAddr(int victimNo)
   {
     var victimAddrs = new Dictionary<int,int> {
-      { 0x1 ,    0x11CF0 },// Чувак с сосисками
-      { 0x2 ,    0x11E44 },// Младенец
-      { 0x3 ,    0x11F7C },// Девка на батуте
-      { 0x4 ,    0x12164 },// Вояка
-      { 0x5 ,    0x1236C },// Собака
-      { 0x6 ,    0x12550 },// Сын доктора тонгу
-      { 0x7 ,    0x12668 },// Училка
-      { 0x8 ,    0x128EE },// Археолог
-      { 0x9 ,    0x12748 },// чувак в бассейне
-      { 0xA ,    0x129EC },// Девка из группы поддержки
-      { 0xB ,    0x12B7E },// Туристы 
+      { 0x1 ,    0x11CF0 },// Barbeque Guy
+      { 0x2 ,    0x11E44 },// Baby
+      { 0x3 ,    0x11F7C },// Guy jumping on a trampoline
+      { 0x4 ,    0x12164 },// Soldier
+      { 0x5 ,    0x1236C },// Dog
+      { 0x6 ,    0x12550 },// Son of Dr Tongue
+      { 0x7 ,    0x12668 },// Teacher
+      { 0x8 ,    0x128EE },// Archeologist
+      { 0x9 ,    0x12748 },// Guy in the pool
+      { 0xA ,    0x129EC },// Cheerleader
+      { 0xB ,    0x12B7E },// Tourists
     };
     int victimAddr = 0;
     victimAddrs.TryGetValue(victimNo, out victimAddr);
@@ -48,14 +48,14 @@ public static class ZamnUtils
   public static int enemyAddrToEnemyNo(int addr)
   {
     var enemyAddrs = new Dictionary<int,int> {
-      { 0x15296 , 0x1},// Обычный зомби
-      { 0x1540C , 0x2},// Быстрый зомби
-      { 0x15872 , 0x3},// Мумия
-      { 0x16C86 , 0x4},// Клон
-      { 0x16d6C , 0x5},// Быстрый клон
-      { 0x162BE , 0x6},// Марсианин 1 
-      { 0x16346 , 0x7},// Марсианин 2
-      { 0x1614E , 0x8},// Оборотень
+      { 0x15296 , 0x1},// Zombie
+      { 0x1540C , 0x2},// Fast Zombie
+      { 0x15872 , 0x3},// Mummy
+      { 0x16C86 , 0x4},// Clone
+      { 0x16d6C , 0x5},// Fast Clone
+      { 0x162BE , 0x6},// Martian 1 
+      { 0x16346 , 0x7},// Martian 2
+      { 0x1614E , 0x8},// Werewolf
       { 0x1861A , 0x9},// Чаки
       { 0x18B92 , 0xA},// Бегающий огонь
       { 0x19C5E , 0xB},// Синий муравей
@@ -75,14 +75,14 @@ public static class ZamnUtils
   public static int enemyNoToEnemyAddr(int addr)
   {
     var enemyAddrs = new Dictionary<int,int> {
-      {0x1,0x15296},// Обычный зомби
-      {0x2,0x1540C},// Быстрый зомби
-      {0x3,0x15872},// Мумия
-      {0x4,0x16C86},// Клон
-      {0x5,0x16d6C},// Быстрый клон
-      {0x6,0x162BE},// Марсианин 1 
-      {0x7,0x16346},// Марсианин 2
-      {0x8,0x1614E},// Оборотень
+      {0x1,0x15296},// Zombie
+      {0x2,0x1540C},// Fast Zombie
+      {0x3,0x15872},// Mummy
+      {0x4,0x16C86},// Clone
+      {0x5,0x16d6C},// Fast Clone
+      {0x6,0x162BE},// Martian 1 
+      {0x7,0x16346},// Martian 2
+      {0x8,0x1614E},// Werewolf
       {0x9,0x1861A},// Чаки
       {0xA,0x18B92},// Бегающий огонь
       {0xB,0x19C5E},// Синий муравей
